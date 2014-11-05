@@ -1,0 +1,15 @@
+{
+  "name": "counterfeit",
+  "version": "0.0.1",
+  "description": "AngularJS library that facilitates the testing of methods that return asynchronous promises.",
+  "author": {
+    "name": "Matt Freer"
+  },
+
+  "private": true,
+
+  "devDependencies": {
+    "angular": "~1.3.1",
+    "angular-mocks": "~1.3.1"
+  }
+}
