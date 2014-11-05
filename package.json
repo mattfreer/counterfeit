@@ -1,0 +1,27 @@
+{
+  "name": "counterfeit",
+  "version": "0.0.1",
+  "description": "AngularJS library that facilitates the testing of methods that return asynchronous promises.",
+  "homepage": "https://github.com/mattfreer/counterfeit.git",
+  "author": {
+    "name": "Matt Freer"
+  },
+  "main": "dist/counterfeit.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "~0.1.13",
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-concat": "~0.5.0"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "testing",
+    "promises",
+    "unit testing"
+  ],
+  "license": "MIT"
+}
