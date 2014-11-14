@@ -6,6 +6,10 @@
   "author": {
     "name": "Matt Freer"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mattfreer/counterfeit.git"
+  }
   "main": "dist/counterfeit.js",
   "engines": {
     "node": ">=0.10.0"
