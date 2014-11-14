@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 
     concat: {
       basic: {
-        src: ['src/counterfeit.js'],
+        src: ['src/counterfeit.js', 'src/promise.js', 'src/stub.js', 'src/counterfeit_fac.js'],
         dest: 'dist/counterfeit.js'
       }
     },
@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     uglify: {
       basic: {
         files: {
-          'dist/counterfeit.min.js': ['src/counterfeit.js']
+          'dist/counterfeit.min.js': ['src/counterfeit.js', 'src/promise.js', 'src/stub.js', 'src/counterfeit_fac.js']
         }
       }
     },
