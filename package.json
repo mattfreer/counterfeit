@@ -1,6 +1,6 @@
 {
   "name": "counterfeit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AngularJS library that facilitates the testing of methods that return asynchronous promises.",
   "homepage": "https://github.com/mattfreer/counterfeit.git",
   "author": {
@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:mattfreer/counterfeit.git"
-  }
+  },
   "main": "dist/counterfeit.js",
   "engines": {
     "node": ">=0.10.0"
