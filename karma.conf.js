@@ -17,6 +17,7 @@ module.exports = function(config) {
     files: [
       "node_modules/chai/chai.js",
       "src/vendor/angular/angular.js",
+      "src/vendor/angular-resource/angular-resource.js",
       "src/vendor/angular-mocks/angular-mocks.js",
       "dist/counterfeit.js",
       "test/**/*.js"
