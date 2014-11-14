@@ -12,6 +12,10 @@ counterfeit.factory("CounterfeitPromise", function() {
     this._complete(this.deferred.resolve, value);
   };
 
+  CounterfeitPromise.prototype.reject = function(value) {
+    this._complete(this.deferred.reject, value);
+  };
+
   CounterfeitPromise.prototype.reset = function() {
     this.deferred = $q.defer();
     return this.deferred.promise;

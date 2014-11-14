@@ -66,6 +66,14 @@
           expect(deathStar.shieldStatus()).to.eql("All systems are operational");
         });
       });
+
+      describe("when reboot fails", function() {
+        it("sets shield status", function() {
+          deathStar.rebootDeflectorShield();
+          promise.reject("Shield malfunction");
+          expect(deathStar.shieldStatus()).to.eql("Shield malfunction");
+        });
+      });
     });
   });
 })(chai.expect, describe, it, angular, sinon);
