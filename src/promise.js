@@ -16,6 +16,10 @@ counterfeit.factory("CounterfeitPromise", function() {
     this._complete(this.deferred.reject, value);
   };
 
+  CounterfeitPromise.prototype.notify = function(value) {
+    this._complete(this.deferred.notify, value);
+  };
+
   CounterfeitPromise.prototype.reset = function() {
     this.deferred = $q.defer();
     return this.deferred.promise;

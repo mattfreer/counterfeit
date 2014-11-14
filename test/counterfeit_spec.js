@@ -59,6 +59,14 @@
     });
 
     describe("#rebootDeflectorShield", function() {
+      describe("when reboot in progress", function() {
+        it("sets shield status", function() {
+          deathStar.rebootDeflectorShield();
+          promise.notify("Shield rebooting");
+          expect(deathStar.shieldStatus()).to.eql("Shield rebooting");
+        });
+      });
+
       describe("when successfully rebooted", function() {
         it("sets shield status", function() {
           deathStar.rebootDeflectorShield();
