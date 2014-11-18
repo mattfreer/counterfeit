@@ -1,7 +1,7 @@
 # Counterfeit
 
-Counterfeit is an AngularJS module, providing tools to test methods
-that return asynchronous promises.
+Counterfeit is an AngularJS module, that provides test doubles for
+asynchronous promises.
 
 This library facilitates the stubbing of functions that return
 promises. Providing users with easy access to resolve/reject fake
@@ -34,8 +34,8 @@ module.exports = function(config) {
 
 ## Example Usage
 
-To demonstrate how `counterfeit` can be facilitate testing consider the
-following AngularJS module called `starWars`:
+To demonstrate how `counterfeit` can be used to facilitate testing,
+consider the following AngularJS module called `starWars`:
 
 ```javascript
 var starWars = angular.module("starWars", ["ngResource"]);

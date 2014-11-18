@@ -1,7 +1,7 @@
 {
   "name": "counterfeit",
   "version": "0.0.2",
-  "description": "AngularJS library that facilitates the testing of methods that return asynchronous promises.",
+  "description": "AngularJS test doubles for asynchronous promises.",
   "author": {
     "name": "Matt Freer"
   },
