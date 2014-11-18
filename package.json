@@ -1,6 +1,6 @@
 {
   "name": "counterfeit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AngularJS test doubles for asynchronous promises.",
   "homepage": "https://github.com/mattfreer/counterfeit.git",
   "author": {
