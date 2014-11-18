@@ -2,6 +2,8 @@ counterfeit.factory("CounterfeitPromise", function() {
   var $timeout, $q;
 
   function CounterfeitPromise() {
+    this.deferred = undefined;
+    this.raw = undefined;
     this._injectDependecies();
     this.reset();
   }
@@ -22,6 +24,7 @@ counterfeit.factory("CounterfeitPromise", function() {
 
   CounterfeitPromise.prototype.reset = function() {
     this.deferred = $q.defer();
+    this.raw = this.deferred.promise;
     return this.deferred.promise;
   };
   // ------------------------------
