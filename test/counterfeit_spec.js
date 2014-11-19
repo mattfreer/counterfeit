@@ -32,27 +32,20 @@
   });
 
   describe('DeathStar', function() {
-    var counterfeit, promise, deathStar;
+    var promise, deathStar;
 
     beforeEach(function() {
       module("counterfeit");
       module("starWars");
 
       module(function($provide) {
-        $provide.decorator("DeflectorShield", function($delegate) {
+        $provide.decorator("DeflectorShield", function($delegate, counterfeit) {
+          promise = counterfeit.promise();
           $delegate.reboot = counterfeit.stub(promise);
           return $delegate;
         });
       });
 
-      inject(function(_counterfeit_) {
-        counterfeit = _counterfeit_;
-        promise = counterfeit.promise();
-      })
-
-      // DeathStar has to be injected after counterfeit and promise have
-      // been setup to ensure that all the dependencies are available
-      // for the decoration of DeflectorShield
       inject(function(DeathStar) {
         deathStar = DeathStar;
       });
