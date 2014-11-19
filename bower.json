@@ -1,6 +1,6 @@
 {
   "name": "counterfeit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "AngularJS test doubles for asynchronous promises.",
   "author": {
     "name": "Matt Freer"
