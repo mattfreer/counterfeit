@@ -1,5 +1,7 @@
 # Counterfeit
 
+[![Build Status](https://travis-ci.org/mattfreer/counterfeit.svg?branch=master)](https://travis-ci.org/mattfreer/counterfeit)
+
 Counterfeit is an AngularJS module, that provides test doubles for
 asynchronous promises.
 
