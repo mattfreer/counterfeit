@@ -1,6 +1,7 @@
 # Counterfeit
 
 [![Build Status](https://travis-ci.org/mattfreer/counterfeit.svg?branch=master)](https://travis-ci.org/mattfreer/counterfeit)
+[![npm version](https://badge.fury.io/js/counterfeit.svg)](http://badge.fury.io/js/counterfeit)
 
 Counterfeit is an AngularJS module, that provides test doubles for
 asynchronous promises.
